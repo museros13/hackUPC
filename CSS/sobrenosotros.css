@@ -1,0 +1,236 @@
+:root {
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #F9E586;
+    --gris: #757575;
+    --fuente-principal: "Jersey 10", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+main p {
+    font-size: 1.2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-align: left;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primario);
+}
+
+.titulo-pagina {
+    font-size: 50px; /* Igual al ancho del logo */
+    line-height: 50px; /* Asegura que el texto esté alineado verticalmente con el logo */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centrado */
+    color: var(--oscuro); /* Color principal */
+    margin-left: 0; /* Elimina cualquier margen adicional del título */
+}
+
+.info-box {
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px 3;
+    text-align: center;
+}
+
+/* Contenedor del header con distribución horizontal */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 30px;
+    background-color: #93d674;
+}
+
+/* Logo y título alineados a la izquierda */
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.logo-titulo a {
+    text-decoration: none;
+    color: #212121;
+    display: flex;
+    align-items: center;
+}
+
+/* Menú de navegación alineado a la derecha */
+nav.menu {
+    display: flex;
+    gap: 20px;
+}
+
+nav.menu a {
+    text-decoration: none;
+    color: #212121;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+nav.menu a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Logo alineado verticalmente */
+.logo {
+    vertical-align: middle;
+}
+
+/* Contenedor de todos los eventos */
+.eventos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Cada evento es una fila con imagen + texto */
+.evento {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen del evento */
+.evento img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Texto a la derecha de la imagen */
+.info-evento {
+    padding: 20px;
+    flex: 1;
+}
+
+.info-evento h3 {
+    margin-top: 0;
+    color: #212121;
+    font-size: 1.5rem;
+}
+
+.info-evento p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #444;
+}
+
+.contact-form {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid var(--secundario);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contact-form label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: var(--oscuro);
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--gris);
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: var(--primario);
+    color: var(--blanco);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+.contact-form button:hover {
+    background-color: var(--oscuro);
+}
+
